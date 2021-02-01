@@ -29,16 +29,16 @@
                     <a class="nav-link" href="/brands">Brands</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="/Products">Products</a>
+                    <a class="nav-link active" href="/products">Products</a>
                 </li>
             </ul>
         </div>
     </nav>
     <div class="container mt-5">
         <div class="row">
-            <div class="col-4">
+            <div class="col-6">
                 <h1>Edit Brand <span class="text-danger"> {{$product->name}}</span></h1>
-                <form action="/brands/update/{{$product->id}}" method="post">
+                <form action="/products/update/{{$product->id}}" method="post">
                     @csrf
                     <div class="form-group">
                         <label for="name">Edit Product {{$product->name}} </label>
